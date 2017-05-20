@@ -3067,18 +3067,18 @@ select {
   background-color: rgba(10, 10, 10, 0.5);
   color: #fefefe; }
 
-.orbit-previous, .orbit-next {
+.orbit-previous, .orbit-next{
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
-  color: #fefefe; }
+  color: black; }
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
     outline: 0; }
   .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
-    background-color: rgba(10, 10, 10, 0.5); }
+    color: rgba(10, 10, 10, 0.5); }
 
 .orbit-previous {
   left: 0; }

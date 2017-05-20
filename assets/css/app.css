@@ -1,3 +1,25 @@
 .fg-caption{
+	width: 200px;
+	height: 200px;
+}
+
+figure{
 	display: inline-block;
+}
+
+.price{
+	color: rgb(74, 74, 74);
+	margin-left: -150px;
+}
+
+.title-color{
+	color: rgb(155, 155, 155);
+}
+
+.arrow{
+	cursor: pointer;
+}
+
+.arrow:hover{
+	color: rgb(155, 155, 155);
 }
