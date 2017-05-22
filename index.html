@@ -13,13 +13,13 @@
   </head>
   <body>
 
-    <header class="small-12 columns">
+  <header>
+    <div class="container show-for-small-only">
       <div class="row">
-
         <section class="menu-bar">
           <div class="off-canvas-wrapper">
 
-            <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <div class="off-canvas position-left" id="menuLeft" data-off-canvas>
               <ul class="accordion" data-accordion data-allow-all-closed="true">
                 <li>
                   <a href="#" class="accordion-title noplus">Sign In</a>
@@ -151,10 +151,14 @@
               </ul>
             </div>
 
+            <div class="off-canvas position-right" id="searchRight" data-off-canvas>
+              <p>Aquí va el buscador, pero todavía no sale :'v</p>
+            </div>
+
             <div class="navbar off-canvas-content" data-off-canvas-content>
               <div class="shipping-bar text-white">
                 <a href="#" class="shipping-item text-white"><span class="uppercase">Free shipping</span> above $75*</a>
-                <span class="right">
+                <span class="float-right">
                   <a href="#" class="shipping-item text-white">Ship to:</a>
                 <a><img src="assets/img/us.png" alt="us-flag" width="15"></a>
                 <a><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -163,20 +167,26 @@
                 
               <div class="title-bar white center">
                 <div class="title-bar-left">
-                  <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                  <button class="menu-icon" type="button" data-open="menuLeft"></button>
                 </div>
                   <a class="title-bar-title"><img src="assets/img/fab_logo_3_0.png" width="60"></a>
 
                 <div class="title-bar-right">
-                  <a class="fa fa-search" aria-hidden="true" data-open="offCanvasRight"></a>
-                  <a class="fa fa-shopping-bag" aria-hidden="true" data-open="offCanvasRight"></a>
+                  <a class="fa fa-search" aria-hidden="true" data-open="searchRight"></a>
+                  <a class="fa fa-shopping-bag" aria-hidden="true" data-open="shopRight"></a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="off-canvas position-right" id="shopRight" data-off-canvas>
+            
+          </div>
+
         </section>
       </div>
-    </header>
+    </div>
+  </header>
 
     <section class="main">
       <div class="row">
