@@ -32,3 +32,13 @@ figure{
 	width: 19%;
 	
 }
+
+.zoom{
+	width: 20%;
+	cursor: pointer;
+}
+
+.zoom:hover{
+	border: 1px solid lightgray;
+	background-color: rgba(255,255,255,0.9);
+}
