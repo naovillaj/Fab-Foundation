@@ -23,3 +23,12 @@ figure{
 .arrow:hover{
 	color: rgb(155, 155, 155);
 }
+
+.photos-pad{
+	padding-top: 25px;
+}
+
+.figure-orbit{
+	width: 19%;
+	
+}
