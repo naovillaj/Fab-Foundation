@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Header-Main */
 
 body{
@@ -17,6 +16,16 @@ body{
 
 .container{
 	padding-bottom: 70px;
+}
+
+.container-md{
+	padding-bottom: 145px;
+}
+
+.fixed-md{
+	position: fixed;
+	width: 100%;
+	background-color: white;
 }
 
 a,
@@ -361,17 +370,6 @@ figure{
 
 /* Descripción 2 */
 
-html{
-  position: relative;
-}
-*{
-  font-family: Lato, Nunito, sans-serif;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-weight: 100;
-}
 .bor-top{
   border-top: 1px solid lightgray;
 }
@@ -427,11 +425,7 @@ p, h4{
   padding-right: 0;
   padding-left: 0;
 }
-.row {
-  max-width: 79rem;
-  margin-right: 0;
-  margin-left: 0;
-}
+
 .fixed{
   position: fixed;
   display: block;
