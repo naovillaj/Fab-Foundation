@@ -388,3 +388,65 @@ html{
   font-weight: bold;
   text-decoration: none;
 }
+
+/* Footer */
+
+
+p, h4, .menu li a{
+  font-size: .99em;
+  /*font-weight: 500;*/
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0rem 0rem;
+  line-height: 1.42857143;
+  margin: 6px;
+}
+p, h4{
+  font-weight: bold;
+}
+.pad-top{
+  padding-top: 16px;
+}
+.pad-bot{
+  padding-bottom: 20px;
+}
+.pad-lef{
+  padding-left: 40px;
+}
+.pad-right{
+  padding-right: 40px;
+}
+.bor-left{
+  border-left: 1px solid lightgray;
+}
+.badge{
+  background-color: red;
+}
+.column, .columns {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row {
+  max-width: 79rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+.fixed{
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  z-index: 999999999999;
+  background-color: transparent;
+}
+.right-bottom{
+  right: 20px;
+  bottom: 15px;
+}
+.left-bottom{
+  left: 20px;
+  bottom: 15px;
+}
+.row:not(.expanded) .row {
+  max-width: 79rem;
+}
