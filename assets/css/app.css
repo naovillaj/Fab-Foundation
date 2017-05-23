@@ -400,9 +400,7 @@ p, h4, .menu li a{
   line-height: 1.42857143;
   margin: 6px;
 }
-p, h4{
-  font-weight: bold;
-}
+
 .pad-top{
   padding-top: 16px;
 }
