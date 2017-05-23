@@ -74,6 +74,10 @@ a.accordion-title.noplus:before{
 	text-transform: uppercase;
 }
 
+.bolder{
+	font-weight: bolder;
+}
+
 .shipping-bar{
 	background-color: #171717;
 	font-size: 0.8em;
@@ -200,7 +204,7 @@ a.fa.fa-angle-left:hover{
 }
 
 .principal-md{
-	padding: 1em 0;
+	padding: 1em 0 0.3em;
 }
 
 .searchbox-md{
@@ -213,8 +217,39 @@ a.fa.fa-angle-left:hover{
 	border: 1px solid black;
 }
 
-img.fab-logo-md{
+a.fa.fa-shopping-bag.bag-md{
+	padding: 0 0.5em;
+}
+
+.fab-logo-md{
 	width: 100px;
+}
+
+div.float-right{
+	color: #9b9b9b;
+	padding-top: 0.5em;
+}
+
+.links-md{
+	color: #9b9b9b;
+	padding: 0 0.5em;
+}
+
+.links-md:hover{
+	color: #4a4a4a;
+}
+
+.nav-md{
+	padding: 0 2.40em;
+	color: #9b9b9b;
+}
+
+.menu-md{
+	padding: 1em 0;
+}
+
+a.bolder.uppercase:hover{
+	color: #9b9b9b;
 }
 
 input[type="search"].search-md::-webkit-input-placeholder {
@@ -261,3 +296,14 @@ input[type="search"].search-md::-webkit-input-placeholder {
 	}
 }
 
+@media only screen and (min-width: 640px){
+	a.links-md.fab-md{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 730px){
+	a.links-md.fab-md{
+		display: inline-block;
+	}
+}
