@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Header-Main */
 
 body{
@@ -356,4 +357,34 @@ figure{
 .zoom:hover{
 	border: 1px solid lightgray;
 	background-color: rgba(255,255,255,0.9);
+}
+
+/* Descripción 2 */
+
+html{
+  position: relative;
+}
+*{
+  font-family: Lato, Nunito, sans-serif;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+.bor-top{
+  border-top: 1px solid lightgray;
+}
+.bor-bott{
+  border-bottom: 1px solid lightgray;
+}
+
+#des-btn{
+  border: 2px solid black;
+  padding: 15px;
+}
+#des-btn a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
