@@ -185,3 +185,31 @@ a.fa.fa-angle-left:hover{
 .bag-promo:active{
 	color: #d0021b;
 }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+	border: none;
+}
+
+li.uppercase > a:hover,
+a.uppercase:hover{
+	color: gray;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a,
+li.uppercase > a{
+	padding: 0.8em;
+}
+
+.top-bar{
+	padding: 0;
+}
+
+.top-bar, .top-bar ul{
+	background-color: #fff;
+	font-size: 2vw;
+}
+
+.menu-md-delimeter{
+	color: #d4d4d4;
+}
+
