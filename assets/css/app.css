@@ -131,7 +131,8 @@ button.fa.fa-search{
 }
 
 a.fa.fa-search,
-a.fa.fa-shopping-bag{
+a.fa.fa-shopping-bag,
+span.fa.fa-plane{
 	color: #9b9b9b;
 	padding-right: 10px;
 }
@@ -169,4 +170,18 @@ a.fa.fa-angle-left:hover{
 .search{
 	padding: 20px 5px;
 	font-size: 1.5em;
+}
+
+.bag-promo{
+	font-size: 0.85em;
+	color: #171717;
+	padding-left: 10px;
+}
+
+.bag-promo:hover{
+	color: #9b9b9b;
+}
+
+.bag-promo:active{
+	color: #d0021b;
 }
