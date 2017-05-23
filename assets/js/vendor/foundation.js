@@ -2128,7 +2128,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       /**
-       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type. 
+       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type.
        * Ignores inputs with data-abide-ignore, type="hidden" or disabled attributes set
        * @fires Abide#invalid
        * @fires Abide#valid
@@ -6034,10 +6034,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         this._events();
-
-        if (this.options.autoPlay && this.$slides.length > 1) {
-          this.geoSync();
-        }
+        //
+        // if (this.options.autoPlay && this.$slides.length > 1) {
+        //   this.geoSync();
+        // }
 
         if (this.options.accessible) {
           // allow wrapper to be focusable to enable arrow navigation
@@ -6062,18 +6062,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       * @function
       */
 
-    }, {
-      key: 'geoSync',
-      value: function geoSync() {
-        var _this = this;
-        this.timer = new Foundation.Timer(this.$element, {
-          duration: this.options.timerDelay,
-          infinite: false
-        }, function () {
-          _this.changeSlide(true);
-        });
-        this.timer.start();
-      }
+    // }, {
+    //   key: 'geoSync',
+    //   value: function geoSync() {
+    //     var _this = this;
+    //     this.timer = new Foundation.Timer(this.$element, {
+    //       duration: this.options.timerDelay,
+    //       infinite: false
+    //     }, function () {
+    //       _this.changeSlide(true);
+    //     });
+    //     this.timer.start();
+    //   }
 
       /**
       * Sets wrapper and slide heights for the orbit.
@@ -6170,22 +6170,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
           //***************************************
 
-          if (this.options.autoPlay) {
-            this.$slides.on('click.zf.orbit', function () {
-              _this.$element.data('clickedOn', _this.$element.data('clickedOn') ? false : true);
-              _this.timer[_this.$element.data('clickedOn') ? 'pause' : 'start']();
-            });
-
-            if (this.options.pauseOnHover) {
-              this.$element.on('mouseenter.zf.orbit', function () {
-                _this.timer.pause();
-              }).on('mouseleave.zf.orbit', function () {
-                if (!_this.$element.data('clickedOn')) {
-                  _this.timer.start();
-                }
-              });
-            }
-          }
+          // if (this.options.autoPlay) {
+          //   this.$slides.on('click.zf.orbit', function () {
+          //     _this.$element.data('clickedOn', _this.$element.data('clickedOn') ? false : true);
+          //     _this.timer[_this.$element.data('clickedOn') ? 'pause' : 'start']();
+          //   });
+          //
+          //   if (this.options.pauseOnHover) {
+          //     this.$element.on('mouseenter.zf.orbit', function () {
+          //       _this.timer.pause();
+          //     }).on('mouseleave.zf.orbit', function () {
+          //       if (!_this.$element.data('clickedOn')) {
+          //         _this.timer.start();
+          //       }
+          //     });
+          //   }
+          // }
 
           if (this.options.navButtons) {
             var $controls = this.$element.find('.' + this.options.nextClass + ', .' + this.options.prevClass);
@@ -6327,17 +6327,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             Foundation.Motion.animateOut($curSlide.removeClass('is-active'), this.options['animOutTo' + dirOut], function () {
               $curSlide.removeAttr('aria-live');
-              if (_this.options.autoPlay && !_this.timer.isPaused) {
-                _this.timer.restart();
-              }
+              // if (_this.options.autoPlay && !_this.timer.isPaused) {
+              //   _this.timer.restart();
+              // }
               //do stuff?
             });
           } else {
             $curSlide.removeClass('is-active is-in').removeAttr('aria-live').hide();
-            $newSlide.addClass('is-active is-in').attr('aria-live', 'polite').show();
-            if (this.options.autoPlay && !this.timer.isPaused) {
-              this.timer.restart();
-            }
+            // $newSlide.addClass('is-active is-in').attr('aria-live', 'polite').show();
+            // if (this.options.autoPlay && !this.timer.isPaused) {
+            //   this.timer.restart();
+            // }
           }
           /**
           * Triggers when the slide has finished animating in.

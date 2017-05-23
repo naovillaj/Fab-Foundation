@@ -1,3 +1,5 @@
+/* Header-Main */
+
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -246,6 +248,7 @@ div.float-right{
 
 .menu-md{
 	padding: 1em 0;
+	font-size: 0.98em;
 }
 
 a.bolder.uppercase:hover{
@@ -306,4 +309,51 @@ input[type="search"].search-md::-webkit-input-placeholder {
 	a.links-md.fab-md{
 		display: inline-block;
 	}
+}
+
+/* Descripción 1 */
+
+.fg-caption{
+	width: 200px;
+	height: 200px;
+}
+
+figure{
+	display: inline-block;
+}
+
+.price{
+	color: rgb(74, 74, 74);
+	margin-left: -150px;
+}
+
+.title-color{
+	color: rgb(155, 155, 155);
+}
+
+.arrow{
+	cursor: pointer;
+}
+
+.arrow:hover{
+	color: rgb(155, 155, 155);
+}
+
+.photos-pad{
+	padding-top: 25px;
+}
+
+.figure-orbit{
+	width: 19%;
+	
+}
+
+.zoom{
+	width: 20%;
+	cursor: pointer;
+}
+
+.zoom:hover{
+	border: 1px solid lightgray;
+	background-color: rgba(255,255,255,0.9);
 }
