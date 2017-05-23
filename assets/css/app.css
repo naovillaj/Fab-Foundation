@@ -205,13 +205,16 @@ a.fa.fa-angle-left:hover{
 
 .searchbox-md{
 	float: left;
-	margin-left: 4em;
 	width: 40%;
 }
 
 .search-md,
 .search-md:focus{
 	border: 1px solid black;
+}
+
+img.fab-logo-md{
+	width: 100px;
 }
 
 input[type="search"].search-md::-webkit-input-placeholder {

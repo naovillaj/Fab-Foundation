@@ -216,14 +216,31 @@
       </div>
       <div class="header-md">
         <div class="row">
-          <div class="principal-md">
-            <div class="logo-md medium-1 columns">
-              <a><img src="assets/img/fab_logo_3_0.png" width="100"></a>
+          <div class="principal-md medium-12 columns">
+            <div class="logo-md medium-2 columns">
+              <a><img class="fab-logo-md" src="assets/img/fab_logo_3_0.png"></a>
             </div>
             <div class="searchbox-md">
               <input class="search-md" type="search" placeholder="What are you shopping for?">
             </div>
+            <div class="links-md float-right">
+              <a href="#">Fab Insider</a>
+              <a href="#">Registry</a>
+              <a class="fa fa-shopping-bag" aria-hidden="true" data-open="shopRight-md"></a>
+              <a href="#">Login</a>
+            </div>
             
+             <div class="off-canvas position-right" id="shopRight-md" data-off-canvas>
+              <div class="bag-title center">
+                <a class="fa fa-angle-right float-left text-white" aria-hidden="true"></a>
+                <span>My Bag</span>              
+              </div>
+          <div class="bag-promo center">
+              <div class="small-12-columns">
+                <span class="fa fa-plane"><a class="bag-promo"><span class="uppercase">Free Shipping</span> on orders above $75*</a></span>
+              </div>
+            </div>
+          </div>
           </div>
           <div class="menu-md"></div>
         </div>
